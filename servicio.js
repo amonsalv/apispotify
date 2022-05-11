@@ -1,7 +1,7 @@
 // paso para construir un api con js puro
 
 //1.declaro la uri (pa donde voy)
-const URI="https://api.spotify.com/v1/artists/6qqNVTkY8uBg9cP3Jd7DAH/top-tracks?market=US"
+const URI="https://api.spotify.com/v1/artists/4gzpq5DPGxSnKTe4SA8HAU/top-tracks?market=US"
 
 //2. declara losparametros de la peticion (que voy a hacer)
 
@@ -19,7 +19,10 @@ fetch(URI,PETICION)
 })
 
 .then(function(respuesta){
-    console.log(respuesta)
+    console.log(respuesta) //respuesta es un objeto
+    console.log(respuesta.tracks)
+    console.log(respuesta.tracks[0])
+    console.log(respuesta.tracks[0].preview_url)
 })
 
 .catch(function(respuesta){
