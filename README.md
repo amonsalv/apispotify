@@ -2,6 +2,11 @@
 
 APISpotify is a JavaScript library that allows you to interact with the Spotify API to retrieve information about artists, albums, tracks, and playlists.
 
+## Requirements
+
+- Node.js >= 22.17.0 (LTS recommended)
+- npm >= 10.0.0
+
 ## Installation
 
 You can install APISpotify using npm:
@@ -66,7 +71,28 @@ Refer to the [official Spotify API documentation](https://developer.spotify.com/
 
 ## Contribution
 
-If you'd like to contribute to the development of APISpotify, you can clone the repository and submit pull requests with your improvements. Make sure to run the unit tests before submitting your code:
+If you'd like to contribute to the development of APISpotify, you can clone the repository and submit pull requests with your improvements.
+
+### Development Setup
+
+1. Ensure you have Node.js >= 22.17.0 installed
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/amonsalv/apispotify.git
+   cd apispotify
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+### Testing
+
+Make sure to run the unit tests before submitting your code:
 
 ```bash
 npm test
